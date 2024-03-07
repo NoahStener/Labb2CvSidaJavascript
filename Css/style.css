@@ -1,0 +1,274 @@
+html, body{
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+ }
+ body{
+    display: flex;
+    flex-direction: column;
+ }
+ .content {
+    flex:1;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold; 
+    margin: 10px;
+    
+}
+
+header{
+    background-color: rgb(150, 61, 61);
+    padding: 10px;
+}
+.background img{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.navbar a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar a:hover {
+    background-color: #fffdfd;
+    color: rgb(197, 47, 47);
+}
+
+section{
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+.email, .phone, .discord{
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(194, 190, 190);
+    font-size: 30px;
+    padding: 20px;
+    max-width: 60%;
+    margin: auto;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.pres-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    align-items: flex-start;
+    gap: 20px;
+ }
+ 
+ .pictureofme img{
+    padding-top: 20px;
+    flex: 1;
+    max-width: 50vw;
+    max-height: 50vh;
+    border-radius: 10px;
+    box-shadow:#000;
+}
+ .pres-text {
+    flex: 2;
+    margin:20px;
+    background-color:  rgb(218, 216, 213);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    line-height: 1.5;
+}
+ 
+ .pres-text h2 {
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+ 
+ .pres-text p{
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+ .projectholder {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+}
+.project1, .project2, .project3{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.info-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c0a8a8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px; 
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+.modal:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: auto; 
+}
+.modal-content p{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.modal-content h2{
+    font-size: 24px;
+    color: #000;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cvcontent h2{
+    text-align: center;
+    font-size: 3em;
+}
+.cvcontent ul{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.rashford img{
+    width: 100%;
+    height: 100%;
+    background: cover;
+    margin-top: 1em;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cv-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cvpic {
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .info-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .horizontal-wrapper {
+        flex-direction: column;
+    }
+    .pres-container {
+        flex-direction: column; /* Använder en kolumn på små skärmar */
+        align-items: center;
+    }
+
+    #myself, .text {
+        width: 100%; /* Justerar bredden för mindre skärmar */
+        margin: 10px 0; /* Centrerar innehållet */
+        padding: 20px;
+    }
+    .projectholder {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

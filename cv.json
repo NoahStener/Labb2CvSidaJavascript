@@ -1,0 +1,31 @@
+{
+    "utbildningar": [
+        {
+            "skola": "Peder skrivares skola",
+            "examen": "Gymnasium",
+            "år": "2010-2013"
+        },
+        {
+            "skola": "Campus varberg",
+            "examen": "In progress",
+            "år": "2023-2025"
+        }
+    ],
+    "arbetsplatser": [
+        {
+            "företag": "Scorett footwear AB",
+            "position": "Lagerarbetare",
+            "år": "2014-2021"
+        },
+        {
+            "företag": "Hisab Joker AB",
+            "position": "Lagerarbetare",
+            "år": "2021-2022"
+        },
+        {
+            "företag": "Region Halland",
+            "position": "Vaktmästare",
+            "år": "2022-2024"
+        }
+    ]
+}

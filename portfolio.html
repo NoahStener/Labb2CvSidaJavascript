@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1><a href ="index.html">Noah Stener</a></h1>
+            <nav class ="navbar">
+                <a href="presentation.html">Presentation</a>
+                <a href="cv.html">CV</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="placeholder.html">Placeholder</a>
+            </nav>
+    </header>
+    <div class ="content">
+        <div class ="projectholder">
+        <div class="project1">
+            <h2>Grupparbete OOP</h2>
+            <img src="c-logo-icon-18.png" alt="Projektbild">
+            <a href="#projekt1" class="info-btn">Mer Information</a>
+        </div>
+        <div class="project2">
+            <h2>Individuellt Databasprojekt</h2>
+            <img src="c-logo-icon-18.png" alt="Projektbild">
+            <a href="#projekt2" class="info-btn">Mer Information</a>
+        </div>
+        <div class="project3">
+            <h2>Individuell Bankapplikation C#.NET</h2>
+            <img src="c-logo-icon-18.png" alt="Projektbild">
+            <a href="#projekt3" class="info-btn">Mer Information</a>
+        </div>
+    </div>
+    
+    <!-- Modal för Projekt 1 -->
+    <div id="projekt1" class="modal">
+        <div class="modal-content">
+            <h2>Grupparbete OOP</h2>
+            <p>I detta projektet skulle vi bygga en Bankapplikation i grupp och applicera våra kunskaper inom objekt orienterad programmering.<br>
+            Det var väldigt givande projekt där varje person i gruppen fick arbeta med olika delar i koden innan allt sätts på plats.<br>
+            <a href ="https://github.com/Mad02Max/Syntax-Squad" target="_blank">Här kommer en länk till våran github repository</a></p>
+            <a href="#" class="close-btn">Stäng</a>
+        </div>
+    </div>
+    
+    
+    <!-- Modal för Projekt 2 -->
+    <div id="projekt2" class="modal">
+        <div class="modal-content">
+            <h2>Individuell Databas</h2>
+            <p>Våran sista uppgift i kursen databasutveckling och dataadministration. Databasen är för en fiktiv skola där vi har sparat ner olika elever, lärare <br>
+            samt andra anställda som arbetar på skolan. I denna övning fick vi lära oss att få ut olika information med hjälp utav sql queries. <br>
+            Databasen är även kopplad till c# med entity framework så informationen går att få ut genom en konsolapplikation också.
+            <a href ="https://github.com/NoahStener/IndividuellDB_Noah.git" target="_blank">Länk till min githib reposity för detta projekt</a></p>
+            <a href="#" class="close-btn">Stäng</a>
+        </div>
+    </div>
+    
+    <!-- Modal för Projekt 3 -->
+    <div id="projekt3" class="modal">
+        <div class="modal-content">
+            <h2>Bankapplikation C#.NET</h2>
+            <p>Det här var vårat första stora projekt i utbildningen.<br>
+            Efter att ha gått igenom lite mer grundläggande programmering med C#.NET skulle vi bygga vårat första stora projekt.<br>
+            En Bankapplikation där man som användare ska kunna logga in och utföra olika tjänster som banken erbjuder, precis som en vanlig bank fast i en konsol applikation.<br>
+            <a href ="https://github.com/NoahStener/NoahBank.git" target="_blank">Länk till min github repository för detta projekt</a></p>
+            <a href="#" class="close-btn">Stäng</a>
+        </div>
+    </div>
+</div>
+    <footer>
+        <p>© 2024 Min Webbplats. Alla rättigheter förbehållna.</p>
+    </footer>
+    <script src ="script.js"></script>
+</body>
+</html>
