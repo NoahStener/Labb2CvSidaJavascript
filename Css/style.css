@@ -5,10 +5,7 @@ html, body{
     display: flex;
     flex-direction: column;
  }
- body{
-    display: flex;
-    flex-direction: column;
- }
+ 
  .content {
     flex:1;
 }
@@ -18,18 +15,12 @@ h1{
     text-align: center;
     font-weight: bold; 
     margin: 10px;
-    
 }
 
 header{
-    background-color: rgb(150, 61, 61);
+    background-color: rgb(61, 97, 150);
     padding: 10px;
 }
-.background img{
-    height: 100vh;
-    width: 100%;
-}
-
 
 .navbar{
     display: flex;
@@ -56,7 +47,38 @@ header{
     color: rgb(197, 47, 47);
 }
 
-section{
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    font-family: Arial, sans-serif;
+    margin: 1em;
+}
+
+.counter button {
+    width: 60px; 
+    height: 30px; 
+    font-size: 16px; 
+    color: white; 
+    background-color: #007bff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+.counter button:hover {
+    background-color: #0056b3; 
+}
+#counterLabel {
+    font-size: 24px; 
+    height: 50px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+#utbildningar, #arbetsplatser{
     background-color: #fff;
     margin: 20px auto;
     padding: 20px;
@@ -65,24 +87,23 @@ section{
     max-width: 800px;
 }
 
-
-
 .contact-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 20px;
     padding-top: 40px;
 }
+.contact-container i{
+    margin-right: 0.7em;
+}
+
 .email, .phone, .discord{
-    flex: 1;
     text-align: center;
+    display: inline-block;
     border-radius: 10px;
-    background-color: rgb(194, 190, 190);
-    font-size: 30px;
-    padding: 20px;
-    max-width: 60%;
-    margin: auto;
+    padding: 1.5em;
+    font-size: 1.5em;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -92,26 +113,25 @@ section{
     display: flex;
     flex-direction: row;
     margin: 20px;
-    align-items: flex-start;
+    justify-content: space-between;
     gap: 20px;
  }
  
  .pictureofme img{
     padding-top: 20px;
-    flex: 1;
     max-width: 50vw;
     max-height: 50vh;
     border-radius: 10px;
     box-shadow:#000;
+    margin-left: 10em;
 }
  .pres-text {
-    flex: 2;
     margin:20px;
-    background-color:  rgb(218, 216, 213);
     border-radius: 10px;
     padding: 10px;
     font-size: large;
     line-height: 1.5;
+    margin-right: 10em;
 }
  
  .pres-text h2 {
@@ -216,9 +236,10 @@ section{
     text-align: center;
     font-size: 3em;
 }
-.cvcontent ul{
+.cvcontent li{
     text-align: center;
     font-size: 1.5em;
+    list-style:  none;
 }
 
 .rashford img{
